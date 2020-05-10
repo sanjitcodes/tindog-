@@ -13,6 +13,8 @@
   <link rel="stylesheet" href="css/styles.css">
   <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/5a38767ab2.js" crossorigin="anonymous"></script>
+  <script type="text/javascript"> (function() { var css = document.createElement('link'); css.href = 'https://use.fontawesome.com/releases/v5.1.0/css/all.css'; css.rel = 'stylesheet'; css.type = 'text/css'; document.getElementsByTagName('head')[0].appendChild(css); })(); </script>
+
   <!-- Bootstrap Scripts -->
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -33,13 +35,13 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-            <a class="nav-link" href="">Contact</a>
+            <a class="nav-link" href="#footer">Contact</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="">Pricing</a>
+            <a class="nav-link" href="#pricing">Pricing</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="">Download</a>
+            <a class="nav-link" href="#cta">Download</a>
         </li>
     </ul>
     </div>
@@ -150,9 +152,9 @@
     <h2>A Plan for Every Dog's Needs</h2>
     <p>Simple and affordable price plans for your and your dog.</p>
 
-    <div class="card-deck">
-
-    <div class="card">
+    <div class="row">
+      <div class = "pricing-column col-lg-4 col-md-6">
+        <div class="card">
       <div class="card-header">
           <h3>Chihuahua</h3>
       </div>
@@ -161,11 +163,12 @@
           <p>5 Matches Per Day</p>
           <p>10 Messages Per Day</p>
           <p>Unlimited App Usage</p>
-          <button type="button">Sign Up</button>
+          <button type="button" class="btn btn-lg btn-block btn-outline-dark">Sign Up</button>
       </div>
     </div>
-
-   <div class="card">
+      </div>
+      <div class = "pricing-column col-lg-4 col-md-6">
+        <div class="card">
       <div class="card-header">
           <h3>Labrador</h3>
       </div>
@@ -174,11 +177,12 @@
           <p>Unlimited Matches</p>
           <p>Unlimited Messages</p>
           <p>Unlimited App Usage</p>
-          <button type="button">Sign Up</button>
+          <button type="button" class="btn btn-lg btn-block btn-dark">Sign Up</button>
       </div>
     </div>
-    
-    <div class="card">
+      </div>
+      <div class = "pricing-column col-lg-4 ">
+        <div class="card">
       <div class="card-header">
           <h3>Mastiff</h3>
       </div>
@@ -188,9 +192,11 @@
             <p>Unlimited Matches</p>
             <p>Unlimited Messages</p>
             <p>Unlimited App Usage</p>
-            <button type="button">Sign Up</button>
+            <button type="button" class="btn btn-lg btn-block btn-dark">Sign Up</button>
       </div>
     </div> 
+      </div>
+    
 
     </div>  
 
@@ -200,20 +206,22 @@
   <!-- Call to Action -->
 
   <section id="cta">
-
-    <h3>Find the True Love of Your Dog's Life Today.</h3>
-    <button type="button">Download</button>
-    <button type="button">Download</button>
-
+    <div class = "action-call">
+       <h3 class="heading-foot">Find the True Love of Your Dog's Life Today.</h3>
+    <button type="button" class="btn btn-dark btn-lg download-button"><i class="fab fa-apple"></i> Download</button>
+      <button type="button" class="btn btn-outline-dark btn-lg download-button" style="color: white; border-color:white"> <i class="fab fa-google-play"></i> Download</button>
+    </div>
   </section>
 
 
   <!-- Footer -->
 
   <footer id="footer">
-
-    <p>© Copyright 2018 TinDog</p>
-
+    <i class="fab fa-twitter logos-foot"></i>
+    <i class="fab fa-facebook-f logos-foot"></i>
+    <i class="fab fa-instagram logos-foot"></i>
+    <i class="fas fa-envelope logos-foot"></i>
+      <p>© Copyright 2018 TinDog</p>
   </footer>
 
 
